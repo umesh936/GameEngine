@@ -18,7 +18,7 @@ public class ResumeCommand implements Command {
 		if (!Game.getInstance().getGameState().getCurrentState().equals("IntroPlayed")) {
 			return "I am afraid this is not availd command at this step";
 		}
-		System.out.println("If you have any save game you can Load that game also else You can Type ECS "
+		System.out.println("If you have any save game you can Load that game also else You can Type ESC "
 				+ "\nEnter your Saved Game Name :");
 		while (true) {
 			String gameName = scanner.nextLine();

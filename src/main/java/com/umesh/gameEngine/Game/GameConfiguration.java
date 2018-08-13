@@ -104,10 +104,10 @@ public class GameConfiguration {
 			propertMap = characterMap;
 		}
 		List<String> availableCharacter = Arrays
-				.asList(propertMap.get(GameConstants.characterConstant.CHARACTER_NAMES).split("\\s*,\\s*"));
+				.asList(propertMap.get(GameConstants.characterConstant.CHARACTER_NAMES).split(","));
+		
 		if (!availableCharacter.contains(name))
 			return null;
-
 		BaseCharacter player = new PlayerCharacter(name);
 
 		player.setCharacterMaxHealth(
